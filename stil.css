@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#15161c;color:#e8e8ee;font-family:Inter,system-ui,sans-serif;line-height:1.5}
+a{color:inherit}
+
+.kopf{display:flex;align-items:center;gap:14px;padding:20px 40px;border-bottom:1px solid rgba(255,255,255,.1);flex-wrap:wrap}
+.marke{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo{width:34px;height:34px;border-radius:8px;background:linear-gradient(135deg,#f0c24a,#9a6f1e);flex:none}
+.firma{font-family:Eczar,serif;font-size:21px;font-weight:700;color:#fff}
+.nav{margin-left:auto;display:flex;gap:22px;font-size:15px;font-weight:600}
+.nav a{color:#aeb4bf;text-decoration:none}
+.nav a:hover{color:#f0c24a}
+
+.held{padding:64px 40px 54px;background:radial-gradient(ellipse at 20% 0%,#2a2546,#15161c 70%)}
+.held h1{font-family:Eczar,serif;font-size:40px;font-weight:700;color:#fff;line-height:1.2;max-width:640px}
+.held p{font-size:17px;color:#b9bec8;margin-top:16px;max-width:580px}
+
+.abschnitt{padding:46px 40px;border-top:1px solid rgba(255,255,255,.08)}
+.ueber{font-family:Eczar,serif;font-size:14px;color:#f0c24a;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:16px}
+h2{font-family:Eczar,serif;font-size:27px;color:#fff;font-weight:700;margin-bottom:14px}
+
+.spiel{display:flex;gap:26px;align-items:center;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:22px;flex-wrap:wrap}
+.spielbild{width:320px;border-radius:10px;border:1px solid rgba(255,255,255,.15);display:block;height:auto;flex:none}
+.spieltext{flex:1;min-width:260px}
+.spieltext h2{margin-bottom:10px}
+.spieltext p{font-size:16px;color:#b9bec8}
+.status{color:#8f96a2;font-size:15px;margin-top:10px}
+
+.kontakt{display:flex;gap:44px;flex-wrap:wrap}
+.kontakt div{font-size:16px;color:#b9bec8}
+.kontakt b{display:block;color:#fff;font-size:14px;margin-bottom:5px;font-family:Eczar,serif}
+.kontakt a{color:#f0c24a;text-decoration:none}
+
+.inhalt{padding:46px 40px;max-width:760px}
+.inhalt h1{font-family:Eczar,serif;font-size:32px;color:#fff;margin-bottom:22px}
+.inhalt h2{font-size:20px;margin:26px 0 10px}
+.inhalt p{font-size:16px;color:#c3c8d2;margin-bottom:10px}
+.inhalt .platzhalter{color:#f0c24a;font-weight:600}
+.inhalt a{color:#f0c24a;text-decoration:none}
+
+.fuss{padding:24px 40px;border-top:1px solid rgba(255,255,255,.1);display:flex;gap:24px;font-size:14px;color:#8f96a2;flex-wrap:wrap}
+.fuss .rechts{margin-left:auto}
+.fuss a{text-decoration:none}
+
+@media (max-width:700px){
+  .held h1{font-size:29px}
+  .kopf,.held,.abschnitt,.inhalt,.fuss{padding-left:20px;padding-right:20px}
+  .spielbild{width:100%}
+  .nav{width:100%;margin-left:0;margin-top:10px;gap:16px}
+}
